@@ -17,7 +17,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="css/carousel.css" rel="stylesheet">
   </head>
   
   <body>
@@ -90,7 +89,7 @@
 	
     <div class="container marketing" itemscope itemtype="http://schema.org/Person">
 	
-	  <div class="row" id="about">
+	  <div class="row pt-5" id="about">
         <div class="col-md-8">
         <h2 class="title">About</h2>
 		<hr>
@@ -302,111 +301,32 @@
 	    </table>
 		
 		<!-- Social Media START -->
-		<h2 class="title pt-5">Connect On Social Media</h2>
+		<h2 class="title pt-5" id="contact">Connect On Social Media</h2>
 		<hr><br>
 		<div class="row">
 		<div class="col-2 col-sm-2 col-md-2">
-		<a itemprop="sameAs" href="https://www.facebook.com/akankitceo" target="_blank"><img src="img/facebook.png" /></a>
+		<a itemprop="sameAs" href="https://www.facebook.com/akankitceo" target="_blank"><img src="img/facebook.png" class="img-fluid" /></a>
 		</div>
 		<div class="col-2 col-sm-2 col-md-2">
-		<a itemprop="sameAs" href="https://twitter.com/akankitceo" target="_blank"><img src="img/twitter.png" /></a>
+		<a itemprop="sameAs" href="https://twitter.com/akankitceo" target="_blank"><img src="img/twitter.png" class="img-fluid" /></a>
 		</div>
 		<div class="col-2 col-sm-2 col-md-2">
-		<a itemprop="sameAs" href="https://plus.google.com/+ankitkumarankitceo" target="_blank"><img src="img/google-plus.png" /></a>
+		<a itemprop="sameAs" href="https://plus.google.com/+ankitkumarankitceo" target="_blank"><img src="img/google-plus.png" class="img-fluid" /></a>
 		</div>
 		<div class="col-2 col-sm-2 col-md-2">
-		<a itemprop="sameAs" href="https://in.linkedin.com/in/ankitceo" target="_blank"><img src="img/linkedin.png" /></a>
+		<a itemprop="sameAs" href="https://in.linkedin.com/in/ankitceo" target="_blank"><img src="img/linkedin.png" class="img-fluid" /></a>
 		</div>
 		</div>
 		<!-- Social Media END -->
+      <!-- FOOTER -->
+      <footer class="pt-5 mt-5">
+        <p><small>Copyright &copy; 2019 <a href="http://www.erankitkumar.com">www.erankitkumar.com</a> &middot; All Rights Reserved</small></p>
+      </footer>
         </div>
 	  </div>
 	  
-	  
-	  <div class="row" id="contact">
-        <div class="col-lg-8 col-md-8">
-		  <!-- The Contact Form -->
-		<!--
-        <h2 class="title">Get In Touch</h2>
-		<hr>
-        <p class="lead text-justify">Please get in touch with me using the form below if you have any question or would like to discuss the possibility of hiring me for a project or as a part time/full time employee.</p>
-        <form class="" name="contact-form" method="post" action="contact.php" onsubmit="return validateForm()">
-		  <div class="form-group">
-		    <label class="sr-only" for="name">Name:</label>
-		    <input type="text" class="form-control" id="name" name="name" value="Name" onFocus="if(this.value=='Name'){this.value=''};" onBlur="if(this.value==''){this.value='Name'};" required/>
-		  </div>
-		  <div class="form-group">
-		    <label class="sr-only" for="name">Email:</label>
-		    <input type="email" class="form-control" id="email" name="email" value="Email" onFocus="if(this.value=='Email'){this.value=''};" onBlur="if(this.value==''){this.value='Email'};" required/>
-		  </div>
-		  <div class="form-group">
-		    <label class="sr-only" for="name">Subject:</label>
-		    <input type="text" class="form-control" id="subject" name="subject" value="Subject" onFocus="if(this.value=='Subject'){this.value=''};" onBlur="if(this.value==''){this.value='Subject'};" required/>
-		  </div>
-		  <div class="form-group">
-		    <label class="sr-only" for="name">Name:</label>
-            <textarea class="form-control" id="message" name="message" rows="10" cols="40" required></textarea>
-		  </div>
-			<button type = "submit" class = "btn btn-info">Submit</button>
-        </form>
-		-->
-        </div>
-      </div>
-	  
 	
     </div><!-- /.container -->
-	
-      <hr class="featurette-divider">
-      <!-- FOOTER -->
-      <footer>
-        <p class="text-center">Copyright &copy; 2019 <a href="http://www.erankitkumar.com">www.erankitkumar.com</a> &middot; All Rights Reserved</p>
-      </footer>
-	
-	
-    <!-- Modal starts -->
-	<div class="modal fade" id="tymsg" tabindex="-1" role="dialog">
-  	  <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Thanks for showing your interest :)</h4>
-          </div>
-          <div class="modal-body">
-            <p>Your comment has been submitted successfully, I'll get in touch with you soon&hellip;</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-	<!-- Modal ends -->
-
-
-	<script type="text/javascript">
-	function validateForm() {
-		var n = document.forms["contact-form"]["name"].value;
-		if (n == null || n == "" || n == "Name") {
-			alert("Name must be filled out");
-			return false;
-		}
-		var e = document.forms["contact-form"]["email"].value;
-		if (e == null || e == "" || e == "Email") {
-			alert("Email must be filled out");
-			return false;
-		}
-		var s = document.forms["contact-form"]["subject"].value;
-		if (s == null || s == "" || s == "Subject") {
-			alert("Subject must be filled out");
-			return false;
-		}
-		var m = document.forms["contact-form"]["message"].value;
-		if (m == null || m == "") {
-			alert("Message/Query must be filled out");
-			return false;
-		}
-	}
-	</script>
 	
 	
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -426,10 +346,5 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-	<script type="text/javascript">
-	  if(window.location.search.match(/success/)) {
-		  $('#tymsg').modal('show');
-	  }
-    </script>
   </body>
 </html>
